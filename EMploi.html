@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EMPLOI DU TEMPS</title>
+    <style>
+        table, tr, th, td {
+            border: 1px solid black;
+            border-spacing: 0;
+            text-align: center;
+            padding: 8px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .highlight {
+            background-color: rgb(228, 192, 11);
+            cursor: pointer;
+        }
+        .info {
+            display: none;
+            margin-top: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <h3>SEMESTRE 6</h3>
+    <table style="width: 100%; height: 80%;">
+        <tr>
+            <th></th>
+            <th colspan="6" style="background-color: rgb(228, 192, 11);">Emploi du temps provisoire SMI S6</th>
+        </tr>
+        <tr style="background-color: rgb(103, 110, 158);">
+            <th></th>
+            <th>9h00 à 10h30</th>
+            <th>10h35 à 12h25</th>
+            <th>12h15 à 13h45</th>
+            <th>13h50 à 15h20</th>
+            <th>15h30 à 17h00</th>
+            <th>17h05 à 18h35</th>
+        </tr>
+        <tr>
+            <th style="background-color: rgb(190, 196, 240);">Lundi</th>
+            <td></td>
+            <td></td>
+            <td class="highlight" onclick="showInfo('info1')">Programmation web dynamique (Cours)<br><span class="highlight" onclick="showInfo('prof1')">Prof. A</span></td>
+            <td class="highlight" onclick="showInfo('info2')">Programmation web dynamique (TD/TP)</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th style="background-color: rgb(190, 196, 240);">Mardi</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th style="background-color: rgb(190, 196, 240);">Mercredi</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th style="background-color: rgb(190, 196, 240);">Jeudi</th>
+            <td></td>
+            <td></td>
+            <td class="highlight" onclick="showInfo('info3')">Génie logiciel (Cours)<br><span class="highlight" onclick="showInfo('prof2')">Prof. B</span></td>
+            <td class="highlight" onclick="showInfo('info4')">Génie logiciel (TD/TP)</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th style="background-color: rgb(190, 196, 240);">Vendredi</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="highlight" onclick="showInfo('info5')">IHM (Cours)<br><span class="highlight" onclick="showInfo('prof3')">Prof. C</span></td>
+            <td class="highlight" onclick="showInfo('info6')">IHM (TD)</td>
+        </tr>
+        <tr>
+            <th style="background-color: rgb(190, 196, 240);">Samedi</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    
+    <div id="info1" class="info">Cours de Programmation Web Dynamique : HTML, CSS, JavaScript, PHP...</div>
+    <div id="info2" class="info">Travaux dirigés et pratiques en développement web.</div>
+    <div id="info3" class="info">Cours de Génie Logiciel : Méthodologies et gestion de projet.</div>
+    <div id="info4" class="info">Ateliers pratiques en conception et modélisation logicielle.</div>
+    <div id="info5" class="info">Interface Homme-Machine : UX/UI et ergonomie.</div>
+    <div id="info6" class="info">Travaux pratiques en IHM avec des outils de prototypage.</div>
+    
+    <div id="prof1" class="info">Prof. A : Spécialiste en développement web avec 10 ans d'expérience.</div>
+    <div id="prof2" class="info">Prof. B : Expert en génie logiciel et modélisation des systèmes.</div>
+    <div id="prof3" class="info">Prof. C : Chercheur en IHM et ergonomie des interfaces.</div>
+    
+    <script>
+        function showInfo(id) {
+            var element = document.getElementById(id);
+            element.style.display = (element.style.display === "block") ? "none" : "block";
+        }
+    </script>
+</body>
+</html>

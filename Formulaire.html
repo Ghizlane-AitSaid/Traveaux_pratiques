@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP2 - WEB DEV</title>
+    <title>Formulaire Complet</title>
+    <style>
+        select {
+            width: 200px;
+            padding: 3px;
+            font-size: 16px;
+            border: 2px solid #0a7090;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+            cursor: pointer;
+        }
+
+        select:focus {
+            border-color: #45a049;
+            background-color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h2>Inscription dans le PFE</h2>
+    <form action="#" method="post" enctype="multipart/form-data">
+        
+        <label for="text">Nom :</label>
+        <input type="text" id="text" name="text"><br><br>
+        
+        <label for="text">Prénom :</label>
+        <input type="text" id="text" name="text"><br><br>
+
+        <label for="select">Filière :</label>
+        <select id="select" name="select" multiple size="1">
+            <option value="1">SMI</option>
+            <option value="2">SMP</option>
+            <option value="3">IGE</option>
+        </select><br><br>
+
+        <label for="text">Sujet :</label>
+        <input type="text" id="text" name="text"><br><br>
+
+        <label for="textarea">Description <span style="color:red;">*</span> :</label><br>
+        <textarea id="textarea" name="textarea" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="date">Date de début :</label>
+        <input type="date" id="date" name="date"><br><br>
+
+        <label for="date">Date de fin :</label>
+        <input type="date" id="date" name="date"><br><br>
+
+        <label for="select">Encadrement :</label>
+        <select id="select" name="select">
+            <option value="1">Option 1</option>
+            <option value="2">Option 2</option>
+            <option value="3">Option 3</option>
+        </select><br><br>
+        
+        <button type="submit">Envoyer</button>
+        <button type="reset">Annuler</button>
+    </form>
+</body>
+</html>

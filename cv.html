@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            transition: background 0.3s, color 0.3s;
+        }
+        .dark-mode {
+            background: #121212;
+            color: white;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #333;
+            padding: 15px;
+            color: white;
+        }
+        .menu {
+            display: flex;
+            gap: 15px;
+        }
+        .menu a {
+            color: white;
+            text-decoration: none;
+        }
+        .toggle-button {
+            cursor: pointer;
+            background: #555;
+            border: none;
+            padding: 10px;
+            color: white;
+            border-radius: 5px;
+        }
+        .container {
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .section {
+            margin-bottom: 20px;
+        }
+        .section h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="menu">
+            <a href="#informations">Informations</a>
+            <a href="#formation">Formation</a>
+            <a href="#competences">Compétences</a>
+            <a href="#experience">Expérience</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <button class="toggle-button" onclick="toggleDarkMode()">Mode Sombre</button>
+    </div>
+    <div class="container">
+        <h1>Curriculum Vitae</h1>
+        
+        <div class="section" id="informations">
+            <h2>Informations Personnelles</h2>
+            <p><strong>Nom :</strong> [Votre Nom]</p>
+            <p><strong>Email :</strong> <a href="mailto:[Votre Email]">[Votre Email]</a></p>
+            <p><strong>Téléphone :</strong> <a href="tel:[Votre Téléphone]">[Votre Téléphone]</a></p>
+            <p><strong>Adresse :</strong> [Votre Adresse]</p>
+        </div>
+        
+        <div class="section" id="formation">
+            <h2>Formation</h2>
+            <p><strong>Établissement :</strong> [Nom de l'École/Université]</p>
+            <p><strong>Diplôme :</strong> [Nom du Diplôme]</p>
+            <p><strong>Année :</strong> [Année de Début - Année de Fin]</p>
+        </div>
+        
+        <div class="section" id="competences">
+            <h2>Compétences</h2>
+            <ul>
+                <li>[Compétence 1]</li>
+                <li>[Compétence 2]</li>
+                <li>[Compétence 3]</li>
+            </ul>
+        </div>
+        
+        <div class="section" id="experience">
+            <h2>Expérience</h2>
+            <p><strong>Poste :</strong> [Nom du Poste]</p>
+            <p><strong>Entreprise :</strong> [Nom de l'Entreprise]</p>
+            <p><strong>Période :</strong> [Date de Début - Date de Fin]</p>
+            <p><strong>Description :</strong> [Brève description des responsabilités]</p>
+        </div>
+        
+        <div class="section" id="contact">
+            <h2>Contact</h2>
+            <p>Vous pouvez me contacter via mon email ou téléphone.</p>
+        </div>
+    </div>
+    <script>
+        function toggleDarkMode() {
+            document.body.classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+</html>
